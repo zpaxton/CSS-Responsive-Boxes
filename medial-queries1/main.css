@@ -1,3 +1,42 @@
 body {
   background: blanchedalmond;
 }
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.a {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+  text-align: center;
+}
+
+.b {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+  text-align: center;
+}
+
+.c {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 10%;
+  text-align: center;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}

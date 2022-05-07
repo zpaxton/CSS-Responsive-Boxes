@@ -1,3 +1,67 @@
 body {
   background: peachpuff;
 }
+
+
+body {
+  background: blanchedalmond;
+}
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.a {
+  background-color: #f1f1f1;
+  flex-direction: wrap;
+  padding: 10px;
+  flex: 50%;
+  text-align: center
+}
+
+.b {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+  text-align: center
+}
+
+.c, .d, .e {
+  color:aqua;
+  background-color: green;
+  margin:0.5em;
+  display:inline-flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  height:25vh;
+  min-width:20vh;
+  justify-content: center;
+  text-align: center
+}
+
+.f, .g, .h {
+  color:aqua;
+  background-color: green;
+  margin:0.5em;
+  display:inline-flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  height:25vh;
+  min-width:20vh;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
